@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="title text-center">
+    <h1>List Story</h1>
+  </div>
+    <table class="list-story table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Name</th>
+            <th scope="col">image</th>
+            <th scope="col">course</th>
+            <th scope="col">project</th>
+            <th scope="col">type</th>
+            <th scope="col">author</th>
+            <th scope="col">illustator</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let story of stories">
+            <th scope="row" >{{story.id}}</th>
+            <td>{{story.name}}</td>
+            <td><img [src]="story.image" alt=""></td>
+            <td>{{story.course}}</td>
+            <td>{{story.project}}</td> 
+            <td>{{story.type}}</td>
+            <td>{{story.author}}</td>
+            <td>{{story.illustrator}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+</div>
+  
